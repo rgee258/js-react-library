@@ -47,11 +47,12 @@ class BookForm extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.newBook(this.state);
+    this.hideForm();
   }
 
   render() {
     return (
-      <div>
+      <div className="form-container">
         <div 
           id="form-btn"
           onClick={this.toggleForm}
