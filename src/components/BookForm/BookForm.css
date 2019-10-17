@@ -1,3 +1,16 @@
+/* Form Toggling */
+
 .hide {
   display: none;
+}
+
+/* Book Entries */
+
+.book {
+  display: flex;
+  flex-direction: row;
+}
+
+.book div {
+  flex-basis: 15%;
 }
