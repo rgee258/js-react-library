@@ -17,7 +17,9 @@ class BookList extends React.Component {
             <div className="author">{this.props.authors[id]}</div>
             <div className="pages">{this.props.pages[id]}</div>
             <div className="readStatus">{this.props.readStatus[id]}</div>
-            {/* TODO Button for updating readStatus */}
+            {/* Here we need the arrow function to prevent infinite looping
+                if we were to call only updateReadStatus(id) */}
+            <div onClick={() => this.props.updateReadStatus(id)}>Update</div>
             {/* TODO Button for deleting book */}
           </div>
         )}

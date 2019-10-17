@@ -18,6 +18,7 @@ class LibraryContainer extends React.Component {
       readStatus: {}
     }
     this.newBook = this.newBook.bind(this);
+    this.updateReadStatus = this.updateReadStatus.bind(this);
   }
 
   newBook = (bookData) => {
@@ -44,19 +45,27 @@ class LibraryContainer extends React.Component {
       },
       newId: this.state.newId + 1,
     }));
-    
-    // TODO update the state to add the new book
-    // Maybe make it an object?
-    //this.setState({ library: this.state.library.push(newBook) });
   }
 
-  updateReadStatus = () => {
+  updateReadStatus = (selectedId) => {
     // TODO callback for updating readStatus with ID
+    const status = this.state.readStatus[selectedId];
+    
+    if (status === "Read") {
+      this.setState(prevState => ({ 
+        readStatus: { ...prevState.readStatus, [selectedId]: "Unread" } 
+      }));
+    } else {
+      this.setState(prevState => ({ 
+        readStatus: { ...prevState.readStatus, [selectedId]: "Read" } 
+      }));
+    }
   }
 
-  deleteBook = () => {
+  deleteBook = (selectedId, index) => {
     // TODO callback similar to updateReadStatus
     // See: https://www.robinwieruch.de/react-state-array-add-update-remove
+    // Also: https://codeburst.io/use-es2015-object-rest-operator-to-omit-properties-38a3ecffe90
   }
 
   render() {
@@ -64,9 +73,13 @@ class LibraryContainer extends React.Component {
       <div>
         <Header text="Library"/>
         <BookForm newBook={this.newBook}/>
-        <BookList bookIds={this.state.bookIds} titles={this.state.titles} 
-          authors={this.state.authors} pages={this.state.pages} 
-          readStatus={this.state.readStatus}/>
+        <BookList 
+          bookIds={this.state.bookIds} 
+          titles={this.state.titles} 
+          authors={this.state.authors} 
+          pages={this.state.pages} 
+          readStatus={this.state.readStatus} 
+          updateReadStatus={this.updateReadStatus}/>
       </div>
     );
   }
