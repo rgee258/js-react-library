@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Library
 
-## Available Scripts
+This repository contains a revisit of my previous library app written using vanilla JS. This time it's been simplified in appearance, but redone completely using React.
 
-In the project directory, you can run:
+Check it out [here](https://rgee258.github.io/js-react-library/).
 
-### `yarn start`
+This project is done following The Odin Project, which can
+be found [here](https://www.theodinproject.com/courses/javascript/lessons/frameworks).
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+To use the library, begin by pressing the Add Book button to open a form for a new book.
+Supply the necessary information for the book, then press Add.
+Now you have a book stored in your library!
+You can now update your book's read status by pressing the Update button or remove it by pressing Delete.
+That covers about everything that can be done with the library, so add as many books as you like.
 
-### `yarn test`
+## Additional Notes
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* This app was setup using create-react-app.
+* The following additional dependencies were used:
+  * [Prop-Types](https://www.npmjs.com/package/prop-types)
+  * [gh-pages](https://www.npmjs.com/package/gh-pages)
+* There are several links to articles of interests used during the implementation of the app, you can also find them here as follows:
+  * [Collections in React State](https://medium.com/@srph/react-maintaining-state-for-collections-80a1d9615886)
+  * [Updating Objects in State](https://stackoverflow.com/questions/43638938/updating-an-object-with-setstate-in-react)
+  * [Removing Object Properties with Object Destructuring](https://codeburst.io/use-es2015-object-rest-operator-to-omit-properties-38a3ecffe90)
+  * [Handling Arrays in State](https://www.robinwieruch.de/react-state-array-add-update-remove)
+  * [Pushing a React App to Github Pages](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
