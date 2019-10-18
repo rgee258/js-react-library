@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Cinzel|Roboto&display=swap');
+
+.main-header {
+  margin-top: 1.5%;
+  margin-bottom: 0.5%;
+  font-size: 3rem;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}

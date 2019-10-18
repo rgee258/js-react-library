@@ -1,16 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Cinzel|Roboto&display=swap');
+
+/* Resets for Default Styling */
+
+button, input[type="submit"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Form Container */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5%;
+  align-items: center;
+}
+
+/* Toggle Button */
+
+#toggle-form {
+  margin-bottom: 1%;
+  padding: 0.5% 1%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Cabin Condensed', sans-serif;
+  color: white;
+  background-color: navy;
+}
+
+/* Book Form */
+
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#book-form {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: lightgray;
+}
+
+#book-form input {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border: 1px solid black;
+}
+
+#book-form .radio-btns {
+  width: 100%;
+  margin-top: 2%;
+}
+
+#book-form .read-radio-text {
+  margin-right: 5%;
+}
+
+#book-form #submit {
+  margin: 2% 0;
+  padding: 1.5% 10%;
+  border-radius: 5px;
+  font-family: 'Cabin Condensed', sans-serif;
+  background-color: #66ff66;
+}
+
 /* Form Toggling */
 
 .hide {
   display: none;
-}
-
-/* Book Entries */
-
-.book {
-  display: flex;
-  flex-direction: row;
-}
-
-.book div {
-  flex-basis: 15%;
 }

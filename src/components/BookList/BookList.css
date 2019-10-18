@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Cinzel|Roboto&display=swap');
+
+/* Resets for Default Styling */
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Book List */
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+/* List Header */
+
+.list-header {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.list-header div {
+  min-width: 1%;
+  flex-basis: 12.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5% 0;
+  text-align: center;
+  word-break: break-word;
+  word-wrap: break-word;
+  color: white;
+  background-color: #290066;
+}
+
+.list-header .header-title, .list-header .header-author {
+  flex-basis: 25%;
+}
+
+/* Book Entries */
+
+.book {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.book div {
+  min-width: 1%;
+  flex-basis: 12.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5% 0;
+  text-align: center;
+  word-break: break-word;
+  word-wrap: break-word;
+  background-color: #f0fff0;
+}
+
+.book .title, .book .author {
+  flex-basis: 25%;
+}
+
+.book div button {
+  padding: 3.5% 10%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Cabin Condensed', sans-serif;
+}
+
+.book .update-btn button {
+  background-color: #80b3ff;
+}
+
+.book .delete-btn button {
+  background-color: #ff4d4d;
+}
